@@ -14,7 +14,7 @@ body {
 
 input {
   width: 30vw;
-  height: 10vh;
+  height: 12vh;
   font-size: 3rem;
   padding: 1rem;
   border-radius: 20px;
@@ -50,4 +50,19 @@ input:focus {
   letter-spacing: 2px;
   margin: 0.5rem;
   font-size: 2rem;
+}
+
+/*Pounds Card */
+.poundsCard {
+  width: 30vw;
+  height: 5vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  border-radius: 5px;
+  background-color: #3E4146;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
