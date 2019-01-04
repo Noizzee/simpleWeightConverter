@@ -10,9 +10,10 @@
 
 body {
   color: #797d83;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input {
+#userInput {
   width: 30vw;
   height: 12vh;
   font-size: 3rem;
@@ -40,7 +41,7 @@ input:focus {
   align-items: center;
   background-color: #6A625C;
   width: 40vw;
-  height: 30vh;
+  height: auto;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
@@ -52,8 +53,15 @@ input:focus {
   font-size: 2rem;
 }
 
+.convertWhat {
+  display: flex;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
 /*Pounds Card */
-.poundsCard {
+.kilometerCard {
   width: 30vw;
   height: 5vh;
   display: none;
@@ -61,7 +69,8 @@ input:focus {
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
-  margin: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
   border-radius: 5px;
   background-color: #3E4146;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);

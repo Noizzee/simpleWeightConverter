@@ -1,27 +1,36 @@
 // Caching the DOM 
 const userInput = document.querySelector('#userInput');
-const poundsCard = document.querySelector('.poundsCard');
+const kilometerCard = document.querySelector('.kilometerCard');
+const radioKM = document.querySelector('#kilometer');
+const radioCM = document.querySelector('#centimeter');
 
 // Variables
 let isEntered = false;
 
 userInput.addEventListener('keyup', (event) => {
   checkEntered();
-  if (isEntered) {
-    let outcome = userInput.value * 2.204622;
-    poundsCard.textContent = `${outcome.toFixed(2)} pounds`;
-    poundsCard.style.display = "flex";
-  } else {
-    poundsCard.textContent = "Enter a value";
+  if (isEntered && radioKM.checked) {
+    let outcome = userInput.value / 1000;
+    kilometerCard.textContent = `${outcome.toFixed(3)} Kilometer`;
+    kilometerCard.style.display = "flex";
+  }
+  if (isEntered && radioCM.checked) {
+    let outcome = userInput.value * 100;
+    kilometerCard.textContent = `${outcome.toFixed(3)} Centimeter`;
+    kilometerCard.style.display = "flex";
+  }
+  if (isEntered == false) {
+    kilometerCard.textContent = "Please enter a value."
+    kilometerCard.style.display = "flex;"
   }
 });
 
 userInput.addEventListener('change', (event) => {
   checkEntered();
-  if (isEntered) {
-    let outcome = userInput.value * 2.204622;
-    poundsCard.textContent = `${outcome.toFixed(2)} pounds`
-    poundsCard.style.display = "flex";
+  if (isEntered && radioKM.checked) {
+    let outcome = userInput.value / 1000;
+    kilometerCard.textContent = `${outcome.toFixed(3)} Kilometer`
+    kilometerCard.style.display = "flex";
   }
 });
 
