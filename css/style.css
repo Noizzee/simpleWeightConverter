@@ -1,0 +1,53 @@
+/*Global Selector*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:focus, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #797d83;
+}
+
+input {
+  width: 30vw;
+  height: 10vh;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid grey;
+  background-color: #99A597;
+}
+
+input:focus {
+  border: 4px solid #727E70;
+}
+
+/*Converter elements */
+.container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.convertContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #6A625C;
+  width: 40vw;
+  height: 30vh;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.convertContainer > h2 {
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
