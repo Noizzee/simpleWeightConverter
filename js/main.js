@@ -32,6 +32,29 @@ userInput.addEventListener('change', (event) => {
     kilometerCard.textContent = `${outcome.toFixed(3)} Kilometer`
     kilometerCard.style.display = "flex";
   }
+  if (isEntered && radioCM.checked) {
+    let outcome = userInput.value * 100;
+    kilometerCard.textContent = `${outcome.toFixed(3)} Centimeter`
+    kilometerCard.style.display = "flex";
+  }
+  if (isEntered == false) {
+    kilometerCard.textContent = "Please enter a value."
+    kilometerCard.style.display = "flex";
+  }
+});
+
+radioKM.addEventListener('click', (event) => {
+  checkEntered();
+  let outcome = userInput.value / 1000;
+  kilometerCard.textContent = `${outcome.toFixed(3)} Kilometer`
+  kilometerCard.style.display = "flex";
+});
+
+radioCM.addEventListener('click', (event) => {
+  checkEntered();
+  let outcome = userInput.value * 100;
+  kilometerCard.textContent = `${outcome.toFixed(3)} Centimeter`
+  kilometerCard.style.display = "flex";
 });
 
 // Check if there is something in the inputfield
