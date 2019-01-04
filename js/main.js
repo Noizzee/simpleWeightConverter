@@ -4,12 +4,12 @@ const kilometerCard = document.querySelector('.kilometerCard');
 const radioKM = document.querySelector('#kilometer');
 const radioCM = document.querySelector('#centimeter');
 
-// Variables
+// Variable to check if something is in the inputfield
 let isEntered = false;
 
 window.addEventListener('load', (event) => {
   kilometerCard.textContent = "Please enter a value.";
-})
+});
 
 userInput.addEventListener('keyup', (event) => {
   checkEntered();
