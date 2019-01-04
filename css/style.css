@@ -23,7 +23,7 @@ body {
   background-color: #99A597;
 }
 
-input:focus {
+#userInput:focus {
   border: 4px solid #727E70;
 }
 
@@ -58,6 +58,10 @@ input:focus {
   margin: 0.5rem;
   font-size: 1.1rem;
   letter-spacing: 1px;
+}
+
+.convertWhat input {
+  margin: 0 0.5rem;
 }
 
 /*Pounds Card */
